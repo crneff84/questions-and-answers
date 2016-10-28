@@ -14,10 +14,11 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyCau9m3FuHiUpbUk3fnUpb_wrnXVN79OoE",
-      authDomain: "questions-and-answer-board.firebaseapp.com",
-      databaseURL: "https://questions-and-answer-board.firebaseio.com",
-      storageBucket: "questions-and-answer-board.appspot.com"
+      apiKey: "AIzaSyD93BrhalZNqfWihd1c3rMoXzEy82VfHdo",
+      authDomain: "qa-board-ade77.firebaseapp.com",
+      databaseURL: "https://qa-board-ade77.firebaseio.com",
+      storageBucket: "",
+      messagingSenderId: "432885627460"
     },
 
     APP: {

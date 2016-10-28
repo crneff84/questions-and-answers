@@ -1,0 +1,15 @@
+{
+  "questions":[{
+    "inquiry": "What time is it?",
+    "author": "This guy",
+    "note": "Something more"
+    },{
+    "inquiry": "Where am I?",
+    "author": "Somebody Else",
+    "note": "None Right Now"
+  },{
+    "inquiry": "Which way is up?",
+    "author": "Another Person",
+    "note": "A Note"
+  }]
+}

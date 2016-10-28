@@ -4,5 +4,6 @@
     <h4>Author: {{question.author}}</h4>
     <p>Notes: {{question.note}}</p>
   </div>
+  {{update-question question=question updateQuestion="updateQuestion"}}
   <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete Question</button>
 </div>

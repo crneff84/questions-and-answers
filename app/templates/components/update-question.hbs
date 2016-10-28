@@ -1,0 +1,13 @@
+{{#if updateQuestionForm}}
+  <form>
+    <label>Question</label>
+    {{input class="form-control" value=inquiry id='inquiry' placeholder="Your Question Goes here..."}}
+    <label>Author</label>
+    {{input class="form-control" value=author id='author' placeholder="Your Name Goes here..."}}
+    <label>Note</label>
+    {{input class="form-control" value=note id='note' placeholder="Your Note Goes here..."}}
+    <button class="btn btn-success" {{action 'updateQuestion' question}}>Submit</button>
+  </form>
+{{else}}
+  <button {{action 'updateQuestionShown'}} class="btn btn-info">Update Question</button>
+{{/if}}

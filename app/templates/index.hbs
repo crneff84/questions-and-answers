@@ -1,3 +1,7 @@
-{{#each model as |question|}}
-  {{question-list question=question}}
-{{/each}}
+<div class="row">
+  {{#each model as |question|}}
+    {{question-list question=question}}
+  {{/each}}
+</div>
+
+{{new-question saveQuestion="saveQuestion"}}

@@ -1,4 +1,8 @@
 <div>
-  <h3>{{answer.answer}}</h3>
-  <h5>{{answer.author}}</h5>
+  <h4>Answer: {{answer.answer}}</h4>
+  <h5>Author: {{answer.author}}</h5>
 </div>
+
+<button class="btn btn-danger" {{action 'destroyAnswer' answer}}>Delete Answer</button>
+
+{{update-answer answer=answer updateAnswer="updateAnswer"}}

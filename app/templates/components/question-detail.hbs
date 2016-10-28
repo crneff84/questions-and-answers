@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="question">
+    <h3>Question: {{question.inquiry}}</h3>
+    <h4>Author: {{question.author}}</h4>
+    <p>Notes: {{question.note}}</p>
+  </div>
+  <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete Question</button>
+</div>

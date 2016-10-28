@@ -16,7 +16,7 @@ This program allows users to create question entries that include the questions 
 
 ## Known Bugs
 
-Update Answer is currently not storing updated answer data to database.
+Update answer function is currently not storing updated answer data to database.
 
 ## Prerequisites
 

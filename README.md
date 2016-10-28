@@ -14,6 +14,10 @@ This program allows users to create question entries that include the questions 
 * Example Input: Content, Author
 * Example Output: Content, Author
 
+## Known Bugs
+
+Update Answer is currently not storing updated answer data to database.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

@@ -1,7 +1,64 @@
-#nameOfSite {
-  float: right;
+body {
+  background-color: #ffaf7a;
+  margin-top: 15px;
+}
+
+.btn {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 15px;
+  border: black solid 2px;
 }
 
 .jumbotron {
   text-align: center;
+  background-color: lightgrey;
+  border: black solid 2px;
+}
+
+.indexPosts {
+  border: solid black 2px;
+  border-radius: 6px;
+  text-align: center;
+  margin: 0 15px 15px 15px;
+  background-color: lightgrey;
+}
+
+.indexPosts:hover {
+  background-color: lightyellow;
+}
+
+li {
+  background-color: lightgrey;
+  border-radius: 6px;
+  margin-bottom: 3px;
+  border: black solid 2px;
+}
+
+li:hover {
+  background-color: lightyellow;
+}
+
+.newQuestionButton {
+  text-align: center;
+  margin: 0px auto;
+}
+
+.question, .answer {
+  border: black solid 2px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+#nameOfSite {
+  float: right;
+}
+
+#answerHeading {
+  text-align: center;
+}
+
+.form-control {
+  border: black solid 2px;
+  margin-bottom: 3px;
 }

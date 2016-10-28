@@ -6,13 +6,13 @@ export default Ember.Route.extend({
   },
   actions: {
     destroyQuestion(question) {
-      var answer_deletions = question.get('answers').map(function(comment){
+      var answer_deletions = question.get('answers').map(function(answer){
         return answer.destroyRecord();
       });
       Ember.RSVP.all(answer_deletions).then(function(){
         return question.destroyRecord();
       });
-      this.transitionTo('index')
+      this.transitionTo('index');
     },
     updateQuestion(question, params) {
       Object.keys(params).forEach(function(key){
@@ -35,6 +35,13 @@ export default Ember.Route.extend({
     destroyAnswer(answer){
       answer.destroyRecord();
       this.transitionTo('question');
+    },
+    updateAnswer(answer, params){
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined && params[key]!==""){
+          answer.set(key,params[key]);
+        }
+      });
     }
   }
 });

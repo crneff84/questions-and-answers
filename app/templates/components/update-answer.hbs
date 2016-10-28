@@ -1,1 +1,9 @@
-{{yield}}
+{{#if updateAnswerForm}}
+  <form>
+    {{input class="form-control" value=explanation id='explanation' placeholder="Your Answer Goes Here..."}}
+    {{input class="form-control" value=author id='author' placeholder="Your Name Goes Here..."}}
+    <button class="btn btn-primary" {{action 'updateAnswer' answer}}>Submit</button>
+  </form>
+{{else}}
+  <button class="btn btn-info" {{action 'updateAnswerShown'}}>Update Answer</button>
+{{/if}}

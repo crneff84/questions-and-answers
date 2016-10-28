@@ -8,7 +8,7 @@ export default Ember.Component.extend({
       }
     },
     updateAnswer(answer, params){
-      this.sendAction('updateAnswer', answer, params);
+      this.sendAction("updateAnswer", answer, params);
     }
   }
 });

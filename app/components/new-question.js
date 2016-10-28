@@ -7,7 +7,9 @@ export default Ember.Component.extend({
     questionFormShow() {
       this.set('addNewQuestion', true);
     },
-
+    questionFormHide(){
+      this.set('addNewQuestion', false);
+    },
     saveQuestion() {
       if(!this.get('inquiry')) {
         alert("Please Enter a Question")

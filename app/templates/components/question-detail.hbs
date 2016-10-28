@@ -7,3 +7,10 @@
   {{update-question question=question updateQuestion="updateQuestion"}}
   <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete Question</button>
 </div>
+<div class="row">
+  <h2>Answers</h2>
+  {{#each question.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer" updateAnswer="updateAnswer"}}
+  {{/each}}
+  {{new-answer saveAnswer="saveAnswer" question=question}}
+</div>

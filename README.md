@@ -1,7 +1,18 @@
 # Qa-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This program allows users to create question entries that include the questions itself, the name of the author, and any additional notes. The program also allows users to create answer entries assigned to a specific question. The user may delete and update the questions and answers.
+
+## Specifications
+
+##### Program creates question entry
+
+* Example Input: Question, Author, Notes
+* Example Output: Question, Author Notes
+
+##### Program creates answer entry for specific question entry
+
+* Example Input: Content, Author
+* Example Output: Content, Author
 
 ## Prerequisites
 
@@ -15,7 +26,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/crneff84/questions-and-answers.git` this repository
 * `cd qa-board`
 * `npm install`
 * `bower install`
@@ -50,4 +61,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

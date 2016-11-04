@@ -6,7 +6,6 @@
     <h5>Number of Answers: {{answercount}}</h5>
   </div>
   <button class="btn btn-success" {{action 'addToFavorites' question}}>Add Question to Favorites</button>
-  <button class="btn btn-warning" {{action 'removeFromFavorites' question}}>Remove Question to Favorites</button>
   <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete Question</button>
   {{update-question question=question updateQuestion="updateQuestion"}}
 </div>

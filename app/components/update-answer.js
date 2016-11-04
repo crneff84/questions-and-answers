@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     updateAnswerShown(){
       this.set('updateAnswerForm', true);
     },
+    updateAnswerHide(){
+      this.set('updateAnswerForm', false);
+    },
     updateAnswer(answer){
       var params= {
         explanation: this.get('explanation'),

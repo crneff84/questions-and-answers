@@ -2,7 +2,8 @@
   <form>
     {{input class="form-control" value=explanation id='explanation' placeholder="Your Answer Goes Here..."}}
     {{input class="form-control" value=author id='author' placeholder="Your Name Goes Here..."}}
-    <button class="btn btn-primary" {{action 'updateAnswer' answer}}>Submit</button>
+    <button class="btn btn-success" {{action 'updateAnswer' answer}}>Submit</button>
+    <button class="btn btn-danger" {{action 'updateAnswerHide'}}>Cancel</button>
   </form>
 {{else}}
   <button class="btn btn-info" {{action 'updateAnswerShown'}}>Update Answer</button>

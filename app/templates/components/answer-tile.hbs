@@ -3,6 +3,5 @@
   <h5>Author: {{answer.author}}</h5>
 </div>
 
-<button class="btn btn-danger" {{action 'destroyAnswer' answer}}>Delete Answer</button>
-
 {{update-answer answer=answer updateAnswer="updateAnswer"}}
+<button class="btn btn-danger" {{action 'destroyAnswer' answer}}>Delete Answer</button>

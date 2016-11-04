@@ -7,6 +7,7 @@
     <label>Note</label>
     {{input class="form-control" value=note id='note' placeholder="Your Note Goes here..."}}
     <button class="btn btn-success" {{action 'updateQuestion' question}}>Submit</button>
+    <button {{action 'updateQuestionHide'}} class="btn btn-danger">Cancel</button>
   </form>
 {{else}}
   <button {{action 'updateQuestionShown'}} class="btn btn-info">Update Question</button>

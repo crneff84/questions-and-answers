@@ -1,6 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  answercount: Ember.computed('question.answers', function() {
+    var count = this.get('question.answers.content.length');
+    return count;
+  }),
   actions: {
     destroyQuestion(question) {
       if(confirm("Are you sure you want to delete this question?")){

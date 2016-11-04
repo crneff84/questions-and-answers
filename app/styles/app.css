@@ -62,3 +62,12 @@ li:hover {
   border: black solid 2px;
   margin-bottom: 3px;
 }
+
+.favoriteListItems {
+  border: solid black 2px;
+  border-radius: 6px;
+  text-align: center;
+  width: auto;
+  margin: 0 15px 15px 15px;
+  background-color: lightgrey;
+}

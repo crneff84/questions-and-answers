@@ -1,3 +1,7 @@
 {{#each favorite.favoriteQuestions as |question|}}
-  {{question.inquiry}} by {{question.author}}
+<div class="col-sm-6">
+  <div class="favoriteListItems">
+    {{#link-to 'question' question.id}}{{question.inquiry}} by {{question.author}}{{/link-to}}
+  </div>
+</div>
 {{/each}}

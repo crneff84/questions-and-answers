@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
-export function timestamp(params/*, hash*/) {
+export function timestamp() {
+  var timestamp = moment();
   return params;
 }
 

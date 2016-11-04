@@ -5,15 +5,21 @@
     <h5>Notes: {{question.note}}</h5>
     <h5>Number of Answers: {{answercount}}</h5>
   </div>
-  {{update-question question=question updateQuestion="updateQuestion"}}
+  <button class="btn btn-success" {{action 'addToFavorites' question}}>Add Question to Favorites</button>
+  <button class="btn btn-warning" {{action 'removeFromFavorites' question}}>Remove Question to Favorites</button>
   <button class="btn btn-danger" {{action 'destroyQuestion' question}}>Delete Question</button>
+  {{update-question question=question updateQuestion="updateQuestion"}}
 </div>
 <div class="row">
   <div id="answerHeading">
     <h3>Answers</h3>
   </div>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer" updateAnswer="updateAnswer"}}
-  {{/each}}
+  {{#if question.answers}}
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer destroyAnswer="destroyAnswer" updateAnswer="updateAnswer"}}
+    {{/each}}
+  {{else}}
+    <h4> There are no answers for this question!</h4>
+  {{/if}}
   {{new-answer saveAnswer="saveAnswer" question=question}}
 </div>

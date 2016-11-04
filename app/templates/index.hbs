@@ -1,4 +1,14 @@
 <div class="row">
+  <div class="glyphExplain">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4><span class="glyphicon glyphicon-education"></span> = Question has at least 2 answers.</h4>
+      </div>
+      <div class="col-sm-6">
+        <h4><span class="glyphicon glyphicon-alert"></span> = Question has no answers!</h4>
+      </div>
+    </div>
+  </div>
   {{#each model as |question|}}
     {{question-list question=question}}
   {{/each}}

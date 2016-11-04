@@ -14,6 +14,11 @@ This program allows users to create question entries that include the questions 
 * Example Input: Content, Author
 * Example Output: Content, Author
 
+##### Program adds question to favorite questions list
+
+* Example Input: Question
+* Example Output: Question
+
 ## Known Bugs
 
 Update answer function is currently not storing updated answer data to database.

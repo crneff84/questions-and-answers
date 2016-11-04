@@ -32,6 +32,7 @@ li {
   background-color: lightgrey;
   border-radius: 6px;
   margin-bottom: 3px;
+  max-width: auto;
   border: black solid 2px;
 }
 

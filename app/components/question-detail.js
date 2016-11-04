@@ -20,7 +20,7 @@ export default Ember.Component.extend({
       this.sendAction('updateQuestion',question, params);
     },
     saveAnswer(params){
-      this.sendAction('saveAnswer', params)
+      this.sendAction('saveAnswer', params);
     },
     destroyAnswer(answer){
       this.sendAction('destroyAnswer', answer);

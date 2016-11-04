@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(){
-    return this.store.query('question', {orderBy:'inquiry'});
+    return this.store.query('question', {orderBy:'answers'});
   },
   actions: {
     saveQuestion(params){

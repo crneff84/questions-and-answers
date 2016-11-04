@@ -12,7 +12,7 @@ export default Ember.Component.extend({
     },
     saveQuestion() {
       if(!this.get('inquiry')) {
-        alert("Please Enter a Question")
+        alert("Please Enter a Question");
       }else {
         var params = {
           inquiry: this.get('inquiry') ? this.get('inquiry'):"" ,

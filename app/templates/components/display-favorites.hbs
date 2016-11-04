@@ -1,7 +1,12 @@
-{{#each favorite.favoriteQuestions as |question|}}
-<div class="col-sm-6">
-  <div class="favoriteListItems">
-    {{#link-to 'question' question.id}}{{question.inquiry}} by {{question.author}}{{/link-to}}
+{{#if favorite.favoriteQuestions}}
+  {{#each favorite.favoriteQuestions as |question|}}
+  <div class="col-sm-6">
+    <div class="favoriteListItems">
+      <h4>{{#link-to 'question' question.id}}{{question.inquiry}} by {{question.author}}{{/link-to}}</h4>
+      <button class="btn btn-danger" {{action 'removeFromFavorites' question}}>Remove From Favorites</button>
+    </div>
   </div>
-</div>
-{{/each}}
+  {{/each}}
+{{else}}
+  <h4>There are currently no questions in your favorites list</h4>
+{{/if}}
